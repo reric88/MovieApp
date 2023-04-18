@@ -107,7 +107,11 @@ main {
     transform: translateY(0);
 }
 
-
+@media (width < 1000px) {
+    .movie {
+        width: 200px;
+    }
+}
 
 
 
