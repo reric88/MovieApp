@@ -107,15 +107,23 @@ main {
     transform: translateY(0);
 }
 
-@media (width < 1000px) {
+@media (width < 600px) {
     .movie {
-        width: 200px;
+        width: 260px;
     }
 }
 
+@media (width < 500px) {
+    .movie {
+        width: 210px;
+    }
+}
 
-
-
+@media (width < 400px) {
+    .movie {
+        width: 160px;
+    }
+}
 
 
 
