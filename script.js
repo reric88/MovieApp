@@ -27,16 +27,17 @@ function showMovies(movies){
         const movieEl = document.createElement('div');
         movieEl.classList.add('movie');
         movieEl.innerHTML = `
-        <a href="https://www.themoviedb.org/movie/${id}">
-        <img src="${imgPath + poster_path}" alt="${title}"></a>
+        <img src="${imgPath + poster_path}" alt="${title}">
         <div class="movie-info">
-            <h3>${title}</h3>
-            <span class="${getClassByRating(vote_average)}">${vote_average}</span>
+        <h3>${title}</h3>
+        <span class="${getClassByRating(vote_average)}">${vote_average}</span>
         </div>
+        <a href="https://www.themoviedb.org/movie/${id}">
         <div class="overview">
-            <h3>overview</h3>
-            ${overview}
+        <h3>Overview</h3>
+        ${overview}
         </div>
+        </a>
     `
     main.appendChild(movieEl);
     })
