@@ -108,6 +108,7 @@ main {
     transition: transform 300ms ease-in;
 }
 
+/* This controls the overview sliding up and down */
 .movie:hover .overview{
     transform: translateY(0);
 }
